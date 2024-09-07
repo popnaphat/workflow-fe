@@ -6,7 +6,7 @@ type GreetingProps = {
 
 const greeting = ({ name, age, format }: GreetingProps) => {
   if (format === "Table") {
-      console.table({ ["name"]: { value: name },["age"]: { value: age } });
+      console.table({ name: { value: name },age: { value: age } });
       return;
   } else {
       console.log(`Hi ${name}. Your format is ${format}`);
