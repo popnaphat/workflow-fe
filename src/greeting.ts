@@ -4,9 +4,8 @@ type GreetingProps = {
     format?: string; 
   };
   
-  const greeting = ({ name, age, format }: GreetingProps): string | void => {
+  const greeting = ({ name, age, format }: GreetingProps) => {
     if (format === "Table") {
-        
         console.table({ [name]: { value: age } });
         return;
     } else {
